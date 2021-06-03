@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="A login page of Gusto">
+  <meta name="keywords" content="gusto, payroll, hire, onboard, pay, insure, support">
+  <meta name="author" content="Shraddha">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="vendor/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Welcome to Gusto</title>
+</head>
+<body>
+  <div class="page">
+
+    <section class="login">
+      <div class="login-box">
+        <header class="header">
+          <img class="logo" src="images/logo.svg" alt="gusto's logo">
+        </header>
+
+        <main class="main">
+          <form class="form">
+            <fieldset class="form__group form__group_sign-in_main">
+              <label class="form__label">Email Address
+                <input type="email" class="form__input" placeholder="" required>
+              </label>
+
+              <label class="form__label">Password
+                <input type="password" class="form__input" placeholder="" required>
+              </label>
+
+              <a class="form__link" href="#">Having trouble singing in?</a>
+              <button type="submit" class="form__btn form__btn_color_green">Sign In</button>
+            </fieldset>
+
+            <p class="form__line">or sign in with</p>
+
+            <fieldset class="form__group form__group_sign-in_additional">
+              <button class="form__btn form__btn_color_white">
+                <img class="form__btn-logo" src="images/btn-logos/google.svg" alt="google logo">
+                Google
+              </button>
+              <div class="form__items-one-line">
+                <button class="form__btn form__btn_color_white form__item-one-line">
+                  <img class="form__btn-logo" src="images/btn-logos/xero.svg" alt="xero logo">
+                  Xero
+                </button>
+                <button class="form__btn form__btn_color_white form__item-one-line">
+                  <img class="form__btn-logo" src="images/btn-logos/intuit-sso-lock.svg" alt="intuit sso lock">
+                  Intuit
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </main>
+      </div>
+    </section>
+
+    <footer class="footer">
+    </footer>
+  </div>
+</body>
+</html>
