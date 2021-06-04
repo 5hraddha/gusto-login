@@ -22,6 +22,33 @@
   border: 1px solid #dcdcdc;
   border-radius: 4px;
   box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.login-box::before {
+  content: "";
+  position: absolute;
+  top: 17%;
+  left: -85%;
+  background: url(../images/humans-at-left.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 65%;
+  width: 85%;
+}
+
+.login-box::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: -80%;
+  background: url(../images/humans-at-right.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70%;
+  width: 80%;
 }
 
 .header {
@@ -89,12 +116,53 @@
   outline: none;
 }
 
+.form__input_checkbox_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.form__input_checkbox_visible {
+  margin: 0 10px 0 0;
+  padding: 0;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #919197;;
+  width: 22px;
+  height: 22px;
+  box-shadow: none;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.form__input_checkbox_hidden:checked + .form__input_checkbox_visible {
+  content: url("../images/tick.svg");
+  background-color: #f0fbfb;
+  border: 2px solid #0a8080;
+}
+
+.form__input_checkbox_hidden:focus + .form__input_checkbox_visible {
+  border: 2px solid #0a8080;
+}
+
+.form__input_checkbox_hidden:hover + .form__input_checkbox_visible {
+  border: 2px solid #0a8080;
+  background-color: #f0fbfb;
+}
+
 .form__link {
   display: block;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.2;
   color: #0a8080;
+  transition: color 0.2s ease-in-out;
+}
+
+.form__link:hover {
+  color: #005961;
 }
 
 .form__btn {

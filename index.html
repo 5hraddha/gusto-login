@@ -15,28 +15,36 @@
   <div class="page">
 
     <section class="login">
+      <!-- login form container -->
       <div class="login-box">
         <header class="header">
           <img class="logo" src="images/logo.svg" alt="gusto's logo">
         </header>
 
+        <!-- login form's main section where user would be required to provide information -->
         <main class="main">
           <form class="form">
+            <!-- main user sign in options -->
             <fieldset class="form__group form__group_sign-in_main">
               <label class="form__label">Email Address
                 <input type="email" class="form__input" placeholder="" required>
               </label>
-
               <label class="form__label">Password
                 <input type="password" class="form__input" placeholder="" required>
               </label>
-
               <a class="form__link" href="#">Having trouble singing in?</a>
+              <label class="form__label">
+                <input type="checkbox" class="form__input form__input_checkbox_hidden">
+                <span class="form__input form__input_checkbox_visible"></span>
+                Remember this device
+              </label>
               <button type="submit" class="form__btn form__btn_color_green">Sign In</button>
             </fieldset>
 
+            <!-- form separator -->
             <p class="form__line">or sign in with</p>
 
+            <!-- alternate user sign in options -->
             <fieldset class="form__group form__group_sign-in_additional">
               <button class="form__btn form__btn_color_white">
                 <img class="form__btn-logo" src="images/btn-logos/google.svg" alt="google logo">
@@ -58,6 +66,7 @@
       </div>
     </section>
 
+    <!-- login page's footer -->
     <footer class="footer">
     </footer>
   </div>
